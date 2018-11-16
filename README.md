@@ -1,8 +1,12 @@
 # ubuntu
 
-docker build -t nc-ubuntu .
+## To build locally
+docker build -t ubuntu .
 
-docker run --rm -it -p 9000:9000 --name daemon  nc-ubuntu
+
+## Run the image 
+docker run --rm -it -p 9000:9000 --name daemon  kumarsumit1/ubuntu
+
 
 nc -lk -p 9000
 
