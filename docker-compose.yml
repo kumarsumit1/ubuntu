@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  ubuntu:
+    container_name: ubuntu
+    build:
+      context: .
+      args:
+        UBUNTU_VERSION: $UBUNTU_VERSION
+    stdin_open: true
+    tty: true    
