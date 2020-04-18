@@ -6,5 +6,7 @@ services:
       context: .
       args:
         UBUNTU_VERSION: $UBUNTU_VERSION
+    environment: 
+      - TZ=Asia/Kolkata
     stdin_open: true
     tty: true    
